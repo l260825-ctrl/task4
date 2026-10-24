@@ -1,0 +1,247 @@
+<html lang="en">
+<head>
+<title>Continental Hotel Reservation Form</title>
+<style>
+body {
+    background-color: white;
+}
+.box {
+    background-color: gainsboro;
+    width: 550px;
+    padding: 10px;
+    margin: auto;
+}
+h2 {
+    color: red;
+    font-family: Trebuchet MS;
+    text-align: center;
+    padding-top: 10px;
+}
+table {
+    background-color: lightblue;
+    border: 3px double black;
+    width: 100%;
+}
+th {
+    text-align: right;
+    font-family: Times New Roman;
+    border: 1px solid navy;
+    padding: 8px;
+}
+td {
+    border: 1px solid navy;
+    padding: 8px;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h2>Continental Hotel Reservation Form</h2>
+
+<form action="/action_page.php">
+<table>
+    <tr>
+        <th><label for="name">Name</label></th>
+        <td><input type="text" id="name" name="name" placeholder="Enter your name" size="28"></td>
+    </tr>
+    <tr>
+        <th><label for="email">eMail</label></th>
+        <td><input type="email" id="email" name="email" value="info@continental.pk" size="28"></td>
+    </tr>
+    <tr>
+        <th><label for="mobile">Mobile No</label></th>
+        <td><input type="text" id="mobile" name="mobile" placeholder="Enter your cell number" size="28"></td>
+    </tr>
+    <tr>
+        <th><label for="arrival">Arrival Time</label></th>
+        <td><input type="text" id="arrival" name="arrival" placeholder="Enter your arrival time" size="20"></td>
+    </tr>
+    <tr>
+        <th>Departure</th>
+        <td>
+            <input type="text" id="dep1" name="dep1" size="16">
+            <input type="text" id="dep2" name="dep2" size="20">
+        </td>
+    </tr>
+    <tr>
+        <th>Room Type</th>
+        <td>
+            <input type="radio" id="single" name="room" value="single">Single
+            <input type="radio" id="double" name="room" value="double">Double<br>
+            <input type="radio" id="suite" name="room" value="suite">Presidential Suite
+        </td>
+    </tr>
+    <tr>
+        <th>Preferences</th>
+        <td>
+            <input type="checkbox" id="smoking" name="smoking">Non-Smoking<br>
+            <input type="checkbox" id="internet" name="internet">Internet<br>
+            <input type="checkbox" id="mattress" name="mattress">Firm Mattress
+        </td>
+    </tr>
+    <tr>
+        <th>Mode of Payment</th>
+        <td>
+            <input type="checkbox" id="cash" name="cash">Cash
+            <input type="checkbox" id="check" name="check">Check<br>
+            <input type="checkbox" id="credit" name="credit">Credit Card
+            <select id="card" name="card">
+                <option value="select">Select Card</option>
+                <option value="visa">Visa</option>
+                <option value="master">Master Card</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:center;">
+            <input type="submit" value="Send Data">
+        </td>
+    </tr>
+</table>
+</form>
+</div>
+
+</body>
+</html>
+
+
+
+<html lang="en">
+<head>
+<title>My Travel Journal</title>
+<style>
+body {
+    background-color: oldlace;
+    font-family: Verdana;
+}
+
+#page {
+    background-color: white;
+    width: 750px;
+    margin: auto;
+    padding: 15px;
+    border: 2px solid darkorange;
+    box-shadow: 3px 3px 4px gray;
+    overflow: hidden;
+}
+
+#header {
+    background-color: orange;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+#header h1 {
+    color: white;
+    font-family: Georgia;
+    font-weight: bold;
+}
+
+#header p {
+    color: white;
+}
+
+#sidebar {
+    background-color: blanchedalmond;
+    border: 3px dashed darkorange;
+    float: left;
+    width: 160px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+#sidebar h2 {
+    color: darkorange;
+    font-family: Georgia;
+}
+
+.entry {
+    background-color: floralwhite;
+    border: 2px solid orange;
+    border-radius: 5px;
+    float: right;
+    width: 480px;
+    padding: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.entry h2 {
+    color: sienna;
+    font-family: Georgia;
+}
+
+.date {
+    color: darkorange;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: red;
+    text-decoration-thickness: 2px;
+}
+
+.entry img {
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 2px solid orange;
+}
+
+.entry p {
+    color: black;
+}
+
+#footer {
+    clear: both;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+
+<div id="page">
+
+    <!-- Header section -->
+    <div id="header">
+        <h1>My Travel Journal</h1>
+        <p>Places I have been and places I want to go</p>
+    </div>
+
+    <!-- Sidebar section -->
+    <div id="sidebar">
+        <h2>Favorites</h2>
+        <ul type="square">
+            <li><a href="https://www.google.com">Google Maps</a></li>
+            <li><b>Lahore</b></li>
+            <li><a href="first.html">My First Web Page</a></li>
+        </ul>
+    </div>
+
+    <!-- Entry 1 -->
+    <div class="entry">
+        <h2><span class="date">10/05/25:</span> Trip to Murree</h2>
+        <img src="C:\Users\Acer\OneDrive\Pictures\murreehills.JPG" alt="Murree hills" width="140" height="100">
+        <p>Last weekend we went to Murree with my family. The weather was cold and the hills were covered in clouds. We drank hot tea and walked on the Mall Road until late evening.</p>
+    </div>
+
+    <!-- Entry 2 -->
+    <div class="entry">
+        <h2><span class="date">10/12/25:</span> Day in Lahore</h2>
+        <img src="C:\Users\Acer\OneDrive\Pictures\badshahi mosque.JPG" alt="Badshahi Mosque" width="140" height="100">
+        <p>Today I visited the Badshahi Mosque and then ate at Food Street. The food was amazing and the old city looked beautiful at night. I want to visit again soon with my friends.</p>
+    </div>
+
+    <!-- Footer section -->
+    <div id="footer">
+        <p>Made by me for my IICT Lab</p>
+    </div>
+
+</div>
+
+</body>
+</html>
